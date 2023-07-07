@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Tag Selector*/
+        h1{color:green; font-size: 12;
+        }
+
+        span{color:turquoise;
+        }
+
+        .border1{
+            border: 3px solid green;
+        }
+
+        #mijn-eerste-div{
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        // dit is Javascript comment
+
+        let a = 6;
+        let test = 123;
+    
+        console.log(a)
+
+        let getal = 8; // getal
+        let text = "Tekst"; // String
+        let boolean = true; // false or true 
+
+        // Arithmetic 
+        let b = 10 + a
+        let c = 20 - b
+        let d = 30 * c
+        let e = 40 % b
+        console.log(b,c,d,e)
+        // Assignment 
+        let f = 10;
+        f += 5
+        let g = f;
+        g -= 5
+        let h = g
+        h *= 10
+        let i = h
+        i /= 100
+        console.log(f,g,h,i)
+        // Comparison
+        console.log(a == h, a != h, a > h, a<h)
+
+        // Function declaration
+        function print() {
+            console.log("In print");
+        }
+
+        // Function call
+        print()
+        print()
+        print()
+        
+        function telop(getal1, getal2) {
+            console.log(getal1 + getal2);
+        }
+        telop(12,34); 
+        telop(567,2);
+
+        function MulDivSub(nub1, nub2, nub3) {
+            console.log(nub1 * nub2 * nub3);
+            console.log(nub1 / nub2 / nub3);
+            console.log(nub1 - nub2 - nub3);
+        }
+        MulDivSub(10,100,1)
+
+
+
+    </script>
+
+</head>
+<body>
+    <h1>Mijn eerste applicatie</h1>
+    <h2>Mijn eerste h2</h2>
+
+    <span style="color: blue;background-color: chartreuse;">Dit is een span</span> 
+    <span>Dit is een 2de span</span>
+    
+    <p class = "border1" Dit is een paragraaf></p>
+
+    <img class = "border1" src="HTML.jpeg" >
+
+    <a href = "https://www.youtube.com/"><br> youtube</a>
+    <a href ="newpage.html">    <br><br> 2e pagina</a>
+
+    <ul>
+        <li>Mario</li>
+        <li>Luigi</li>
+    </ul>
+
+    <ol>
+        <li>Peach</li>
+        <li>Daisy</li>
+    </ol>
+
+
+    <div id="mijn-eerste-div">
+        <span>Span in div</span>
+    </div>
+
+    <div>
+        <ol>
+            <li>Optie 1</li>
+            <li>Optie 2</li>
+        </ol>
+    </div>
+
+    <input type="number" id="getal1">
+    <input type="number" id="getal2">
+
+    <button type="button" onclick="optellen()">
+        Telop
+    </button>
+    <button type="button" onclick="minus()">
+        Minus
+    </button>
+    <button type="button" onclick="keer()">
+        vermenigvuldigen
+    </button>
+    <button type="button" onclick="deel()">
+        delen
+    </button>
+
+    <script>
+        function optellen() {
+            // Input willen uitlezen
+            let getal1veld = parseInt(document.getElementById('getal1').value)
+            let getal2veld = parseInt(document.getElementById('getal2').value)
+
+            // Alert berekening
+            let plusantw = (getal1veld+getal2veld);
+            alert(plusantw)
+        }
+        function minus() {
+            // Input willen uitlezen
+            let getal1veld = parseInt(document.getElementById('getal1').value)
+            let getal2veld = parseInt(document.getElementById('getal2').value)
+
+            // Alert berekening
+            let minantw = (getal1veld-getal2veld);
+            alert(minantw)
+        }
+        function keer() {
+            // Input willen uitlezen
+            let getal1veld = parseInt(document.getElementById('getal1').value)
+            let getal2veld = parseInt(document.getElementById('getal2').value)
+
+            // Alert berekening
+            let keerantw = (getal1veld*getal2veld);
+            alert(keerantw)
+        }
+        function deel() {
+            // Input willen uitlezen
+            let getal1veld = parseInt(document.getElementById('getal1').value)
+            let getal2veld = parseInt(document.getElementById('getal2').value)
+
+            // Alert berekening
+            let deelantw = (getal1veld/getal2veld);
+            alert(deelantw)
+        }
+    </script>
+
+</body>
+</html>
